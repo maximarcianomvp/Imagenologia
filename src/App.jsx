@@ -7,7 +7,7 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const hdr = (tok) => ({
   apikey: SUPABASE_KEY,
   "Content-Type": "application/json",
-  ...(tok ? { Authorization: `Bearer ${tok}` } : {}),
+  Authorization: `Bearer ${tok || SUPABASE_KEY}`,
 });
 
 const db = {
@@ -716,4 +716,3 @@ export default function App() {
   if (!session.perfil) return <SetupPerfil uid={session.uid} token={session.token} onDone={p => setSession(s => ({ ...s, perfil: p }))} />;
   if (session.perfil.rol === "jefe") return <PanelJefe session={session} onLogout={() => setSession(null)} />;
   return <PanelResidente session={session} onLogout={() => setSession(null)} />;
-}
