@@ -1,0 +1,50 @@
+{
+  "name": "Imagenología - Sistema de Gestión de Estudios Radiológicos",
+  "short_name": "Imagenología",
+  "description": "Sistema de gestión de solicitudes y censo de estudios radiológicos",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1E3A8A",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231E3A8A' width='192' height='192'/><text x='96' y='120' font-size='100' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial'>🩻</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%231E3A8A' width='512' height='512'/><text x='256' y='380' font-size='280' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial'>🩻</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "productivity"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23F8FAFC' width='540' height='720'/><rect fill='%231E3A8A' width='540' height='80'/><text x='30' y='50' font-size='24' font-weight='bold' fill='white' font-family='Arial'>Imagenología</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Solicitudes",
+      "short_name": "Solicitudes",
+      "description": "Accede rápidamente a las solicitudes pendientes",
+      "url": "/?page=solicitudes",
+      "icons": [{ "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%231E3A8A' width='96' height='96'/><text x='48' y='68' font-size='50' text-anchor='middle' fill='white'>📋</text></svg>", "sizes": "96x96" }]
+    },
+    {
+      "name": "Formulario QR",
+      "short_name": "QR",
+      "description": "Accede al código QR para escanear solicitudes",
+      "url": "/?page=qr",
+      "icons": [{ "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%231E3A8A' width='96' height='96'/><text x='48' y='68' font-size='50' text-anchor='middle' fill='white'>🔳</text></svg>", "sizes": "96x96" }]
+    }
+  ]
+}
